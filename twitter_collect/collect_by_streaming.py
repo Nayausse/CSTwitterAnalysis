@@ -6,10 +6,11 @@ from tweepy.streaming import StreamListener
 def twitter_setup():
     """
     Utility function to setup the Twitter's API
-    with an access keys provided in a file credentials.py
+    with an access keys
+    provided in a file credentials.py
     :return: the authentified API
     """
-    # Authentication and access using keys:
+    # Authentication and access using keys :
     auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
     auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 
